@@ -30,13 +30,22 @@ Route::put('/update','TransferController@update');
 
 Route::get('/register', 'RegisterController@create');
 Route::post('register', 'RegisterController@store');
+Route::get('/freshregister', 'RegisterController@freshregister');
+Route::post('/begin', 'RegisterController@storeregister');
 
 Route::get('/login', 'LoginController@create');
 Route::post('/session', 'LoginController@store');
+Route::get('/freshlogin', 'LoginController@freshlogin');
+Route::post('/restore', 'LoginController@storelogin');
 Route::get('/logout', 'LoginController@destroy');
 
 Route::get('login/facebook', 'LoginController@redirectToProvider');
 Route::get('login/facebook/callback', 'LoginController@handleProviderCallback');
+
+Route::post('/password/email','Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('/password/reset','Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::post('/password/reset','Auth\ResetPasswordController@reset');
+Route::get('/password/reset/{token}','Auth\ResetPasswordController@showResetForm')->name('password.reset');
 
 
 Route::get('contacts', 'ContactController@index');

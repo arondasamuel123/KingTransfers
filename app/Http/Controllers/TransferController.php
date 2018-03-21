@@ -19,7 +19,7 @@ class TransferController extends Controller
     public function index()
     {
          $transfers = Transfer::all();
-         return view('index')->with('transfers', $transfers);
+         return view('')->with('transfers', $transfers);
 
     }
 
@@ -41,36 +41,23 @@ class TransferController extends Controller
      */
     public function store(Request $request)
     {
-        //$transfer = new Transfer;
-            //$transfer->from = request('from');
-            //$transfer->to = request('to');
-            //$transfer->date = request('date');
-            //$transfer->return = request('return');
-            //$transfer->passengers = request('passengers');
-            //$transfer->luggage = request('luggage');
-            
-            //$transfer->save();
-            if(Auth::check()) {
-            $user = Auth::user();
-            $user->id;
-            $user->transfers()->create(request(['from', 'to', 'date','return','passengers', 'luggage']));
-
-            return redirect()->to('show');
-
-        }else {
-
-
-            $transfer = new Transfer;         
+            $transfer = new Transfer;
             $transfer->from = request('from');
             $transfer->to = request('to');
             $transfer->date = request('date');
             $transfer->return = request('return');
             $transfer->passengers = request('passengers');
             $transfer->luggage = request('luggage');
+            
             $transfer->save();
+        
+            //$user = Auth::user();
+            //$user->id;
+            //$user->transfers()->create(request(['from', 'to', 'date','return','passengers', 'luggage']));
 
             return redirect()->to('show');
-        }
+
+        
     }
 
     /**

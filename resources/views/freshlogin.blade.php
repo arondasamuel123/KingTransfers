@@ -4,7 +4,7 @@
     <tr>
         <td>
     <div class="form-group">
-    <form method="POST" action="session">
+    <form method="POST" action="restore">
         <h2>Log In</h2>
         {{ csrf_field() }}
         <div class="form-group">
@@ -22,7 +22,7 @@
             <button style="cursor:pointer" type="submit" class="btn btn-success">Login</button>
             
         <a class="btn btn-primary" href="{{ url('login/facebook') }}" id="btn-fblogin">
-       <i class="fab fa-facebook" aria-hidden="true"></i> Login with Facebook </a> 
+         <span class="fab fa-facebook" aria-hidden="true"></span> Login with Facebook </a> 
 
 
                
@@ -47,7 +47,6 @@
 </table>
 <br>
 <br>
-
 
 
 

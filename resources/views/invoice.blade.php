@@ -17,8 +17,6 @@
     		<div>
     				
     				@foreach($user->transfers as $transfer)
-    				<strong>Passenger(s):</strong>{{$transfer->user->name}}<br>
-    				<br>
     				<strong>From:</strong>{{$transfer->from}}<br>
     				<strong>To:</strong>{{$transfer->to}}<br>
     				<strong>Date of Arrival:</strong>{{$transfer->date}}<br>
@@ -29,6 +27,7 @@
     			<hr>
     			@foreach($transfer->flights as $flight)
     			<strong>Flight arrival time</strong>:{{$flight->arrivaltime}}<br>
+                <strong>Airport from:</strong>:{{$flight->airport}}<br>
     			
     			<strong>Number to contact</strong>:{{$flight->phoneno}}<br>
     			<strong>Airline Name</strong>:{{$flight->airname}}<br>

@@ -3,7 +3,7 @@
 <table width="40%" align="center" height="60%">
     <tr>
         <td>
-    <form method="POST" action="/register">
+    <form method="POST" action="/begin">
         <h2>Register</h2>
         {{ csrf_field() }}
         <div class="form-group">

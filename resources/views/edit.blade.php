@@ -8,8 +8,7 @@
      <input type="hidden" name="_method" value="PUT">
      {{ csrf_field() }}
       <div class="form-group">
-       <label for="title">User_id:</label>
-      <input type="number" value="{{$transfer->user_id}}" class="form-control" id="taskTitle"  name="user_id" disabled="">
+
         <label for="title">From:</label>
         <input type="text" value="{{$transfer->from}}" class="form-control" id="taskTitle"  name="from" >
       </div>

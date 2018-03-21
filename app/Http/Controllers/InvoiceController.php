@@ -53,8 +53,9 @@ class InvoiceController extends Controller
     public function show(User $user)
     {
         //$user = User::with('transfers')->find(1);
-        $user->load('transfers.flights');
+        //$user->load('transfers.flights');
         //return $user;
+        $user->transfers;
         return view('invoice',compact('user'));
         
     //$pdf = PDF::loadView('invoice', compact('user'));

@@ -23,7 +23,7 @@
 
                 <div class="form-group float-label-control">
                     <label for="time">Flight arrival time:</label>
-                    <input type="time" class="form-control" id=arriva; name="arrivaltime">
+                    <input type="time" class="form-control" id="arrival" name="arrivaltime">
                 </div>
 
 
@@ -33,12 +33,13 @@
                 </div>
 
                 <div>
-                    <label for="request">Requests/additional info:</label>
+                <label for="request">Requests/additional info:(This includes any stops you would like to make) </label>
                 <textarea class="form-control" id="requests" name="requests" rows="5"></textarea>
                     </div>
                 <div>
                 <label for="payment">Payment Method:</label>
                     <select class="form-control" name="payment">
+                     <option selected>Payment method...</option>
                     <option>Paypal</option>
                      <option>Pay on Arrival</option>
                     </select>
@@ -52,3 +53,4 @@
         <td>
     <tr>
 </table>
+

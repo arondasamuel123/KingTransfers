@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
  <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
-  
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
    <style>
   body {
       font: 400 15px Dosis, sans-serif;
@@ -21,22 +23,6 @@
       color: #818181;
   }
  
-  .left{
-    position: absolute;
-    left: 210px;
-    bottom:200px;
-  }
-  .right{
-    position: absolute;
-    right: 210px;
-    bottom:200px;
-    
-  }
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
   h3{
     margin-top: 100px;
     color:#020202; 
@@ -57,10 +43,7 @@
       font-family: Dosis, sans-serif;
   }  
   .jumbotron {
-    background-image: url("images/ktjumb.jpg"); 
-    background-size: 1400px 500px; 
-      background-repeat: no-repeat;
-      background-size:1400px 400px;
+    background-image: url('images/happykt2.jpeg');
       line-height: 1.2em; 
       color: #ffffff;
       padding: 100px 20px;
@@ -151,7 +134,7 @@
   }
   .navbar {
       margin: 0;
-      background-color: #EFF1F0 ;
+      background-color: #fefefe;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -172,6 +155,7 @@
       border-color: transparent;
       color: #fff !important;
   }
+  
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
@@ -211,74 +195,56 @@
       margin: 25px 0;
     }
     .btn-lg {
-        width: 100%;
+        width: 70%;
         margin-bottom: 35px;
     }
   }
   @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
+    
     
   }
+
+   @media screen and (max-width: 746px) {
+        img {
+          width:60%;
+        }
+
+    }
   .div6 {
     width:800px;
     margin: auto;
   }
-  .div3 {
-    position: relative;
-  height: 100px;
-  top: 70px;
-  width: 1430px;
-  right: 100px;
-
-  background-color:#070707;
-  border-color: #696;
-  opacity: 0.9; 
-  
-
-  }
+ 
   .div2{
-    position: relative;
+   position: relative;
   height: 40px;
-  top: 70px;
-  width: 1430px;
+  top: 100px;
+  width: 1390px;
   right: 100px;
+  margin:0 auto;
 
   background-color:#1E1F1E;
   border-color: #696;
-  opacity: 1; 
+  opacity: 0.9; 
+
 
   }
   .div4 {
     position: relative;
     height: 110px;
-    width:800px;
     margin: auto;
     background-color: #9DA19E;
     border-color: #696;
     opacity: 0.8;
 
   }
-  .fa {
-  padding: 20px;
-  font-size: 20px;
+  .fab {
+ padding: 3px;
+  font-size: 15px;
   text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
   border-radius: 50%;
 }
-.fa:hover {
-    opacity: 0.5;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+
 .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -292,18 +258,158 @@
   margin: auto;
 
 }
+@media only screen and (max-width: 667px){
 
-.div10{
-   position: relative;
-  height: 40px;
-  width: 1430px;
-  bottom: 100px;
-  right: 100px;
-  background-color: #3b5998;
-  border-color: #696;
-   
+        .div7{width:100%;}
+        .div6{width: 100%;}
 
+    }
+}
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 320px) {
+  img.one {
+   width: 50%;
+ }
+ .div2 {
+  width: 143%;
+ }
+img.two {
+  width: 30%;
+ }
+
+}
+
+@media only screen and (min-width: 360px) {
+  img.one {
+   width: 40%;
+ }
+ .div2 {
+  width: 138%;
+ }
+img.two {
+  width: 30%;
+ }
+
+
+}
+@media only screen and (min-width: 375px) {
+  img.one {
+   width: 50%;
+ }
+ .div2 {
+  width: 136%;
+ }
+
+}
+
+
+@media only screen and (min-width: 414px) {
+  img.one {
+   width: 50%;
+ }
+ .div2 {
+  width: 132%;
+ }
+
+ .div7{width:100%;}
+ .div6{width: 100%;}
+
+ img.two {
+  width: 100px;
+ }
+
+
+}
+@media only screen and (min-width: 960px) {
+  img.one {
+   width: 60%;
+ }
+ .div2 {
+  width: 113%;
+ }
+
+img.two {
+  width: 130px;
+ }
+ img.two {
+  position: relative;
+  left: 210px;
+ }
+
+
+}
+@media only screen and (min-width: 1024px) {
+  img.one {
+   width: 50%;
+ }
+ .div2 {
+  width: 112%;
+ }
+img.two {
+  position: relative;
+  left: 230px;
+ }
+
+
+}
+@media only screen and (min-width: 1200px) {
+  img.one {
+   width: 80%;
+ }
+ 
+img.two {
+  position: relative;
+  left: 500px;
+ }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  img.one {
+    width: 80%;
   }
+  .div2{
+    width: 109%;
+  }
+}
+
+img.two {
+  position: relative;
+  left: 400px;
+ }
+
+
+#div17 {
+  float: left;
+}
+#div18 {
+  text-align: center;
+  background-color:   #cfcfcf;
+
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+} 
 
   </style>
 </head>
@@ -317,17 +423,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="{{ url('/homepage') }}">KING TRANSFERS</a>
+     
+     <a href="/homepage">
+     <img class="one" src="images/ktnew.png" width="70%">
+     </a>
+     
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ route ('howitworks') }}">HOW IT WORKS</a></li>
-        <li><a href="{{ route ('about') }}">ABOUT US</a></li>
-        <li><a href="/login">LOGIN</a></li>
-        <li><a href="/register">REGISTER</a></li>
-        <li><a href="/logout">LOGOUT</a></li>
         @if( auth()->check() )
+        <li><a style="color:#000000" href="{{ route ('howitworks') }}">HOW IT WORKS</a></li>
+        <li><a style="color:#000000" href="{{ route ('about') }}">ABOUT US</a></li>
+        <li><a style="color:#000000" href="/logout">LOGOUT</a></li>
+
                     <li><h4>Hi {{ auth()->user()->name }}</h4></li>
+        @else
+        <li><a style="color:#000000" href="{{ route ('howitworks') }}">HOW IT WORKS</a></li>
+        <li><a style="color:#000000"href="{{ route ('about') }}">ABOUT US</a></li>
+        <li><a style="color:#000000" href="/freshregister">REGISTER</a></li>
+        <li><a style="color:#000000"href="/freshlogin">LOGIN</a></li>
+        <li><a style="color:#000000" href="/logout">LOGOUT</a></li>     
                 
       @endif
         
@@ -337,17 +452,22 @@
 </nav>
 
 
-<div class="container-fluid text-center">
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
+<footer>
+
+<div id="div18" class="container-fluid" >
+
+<div id="div17" class="container-fluid text-left">
+ <a href="#" class="fab fa-facebook"style="font-size:45px;"></a>
+  <a href="#" class="fab fa-twitter" style="font-size:45px;"></a>
+  </div>
+   
+     &copy; Copyright 2018 King Transfers
+
+  <img class="two" src="images/paypal-logo.png" width="200" height="10%" style="display:inline-block"> 
+  <img class="two" src="images/secure.png" width="7%" height="9%" style="display:inline-block">
 </div>
 
-<div class="container-fluid bg-grey" align="center">
-  <img src="images/paypal-logo.png" width="200" height="10%" style="display:inline-block" > 
-  <img src="images/secure.png" height="9%" style="display:inline-block">
-
-</div>
-
+</footer>
 <script>
 function myFunction() {
     document.getElementById("return").disabled = true;
@@ -397,24 +517,30 @@ $(document).ready(function(){
 })
 </script>
 
-<script>
-  $( function() {
-    var todestinations = [
-      "Sankara Hotel",
-      "Nairobi Serena Hotel",
-      "Radisson Blu Hotel",
-      "Eka Hotel",
-      "ABC Place Mall",
-
-    ];
-    $( "#to" ).autocomplete({
-      source: todestinations
-    });
+ <script type="text/javascript">
+    $( function() {
+    $( "#datepicker" ).datepicker({dateFormat: 'yy-mm-dd' });
   } );
   </script>
 
 
+    <script type="text/javascript">
+    $( function() {
+    $( "#return" ).datepicker({dateFormat: 'yy-mm-dd' });
+  } );
+  </script>
+
+
+
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script type="text/javascript">
+  function activatePlacesSearch() {
+    var input = document.getElementById('to');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  }
+</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcQ_iHX3GGhHNxAAtA-_fa7o1uHpSJkRQ&libraries=places&callback=activatePlacesSearch"></script>
 </body>
 </html>

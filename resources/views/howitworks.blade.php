@@ -9,12 +9,7 @@
    <h4>We are located in Nairobi,Kenya. Our aim is to ensure we provide  safe,<br>
     reliable and affordable transfers from Jomo Kenyatta International Airport and vice  versa for you.We have a fleet of comfortable cars and well trained personel with experience</h4>
   </div>
-	<img src="{{ asset('images/abimage.png') }}" alt="product" class="img-fluid" width="150" height="100">
-
-	<img class="right" src="{{ asset('images/drivimage.png') }}" alt="product" class="img-fluid"width="150" height="152">
-
-	<img class="left" src="{{ asset('images/tranimage.png') }}" alt="product" class="img-responsive" width="150" height="152">
-
+	
   <div class="col-md-12 text-center">
   <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">HOW IT WORKS</button>
 </div><br/>
@@ -25,14 +20,15 @@
 
 
 <div class="jumbotron text-center">
+<div class="container-fluid">
   <div class="div4">
   <h1>arrive comfortably.... </h1>
   </div> 
-  <div class="div3">
-  <button type="submit" onclick="myFunction()" class="btn btn-primary" style="margin-left: -772px">One-way</button>
+<button type="submit" onclick="myFunction()" class="btn btn-primary">One-way</button>
 <button type="submit" onclick="myFunction2()"  class="btn btn-danger">Return</button>
 <br>
-   
+    <div class="row">
+    <div class="col-sm-12 form-group">
     <form class="form-inline" action="confirm" method="POST">
   {{ csrf_field() }}
   <div class="form-group">
@@ -41,17 +37,18 @@
         <option>JKIA</option>
       </select>
 
+  </div>
+  <div class="form-group">
   <input type="search" class="form-control" id="to" placeholder="To:" required name="to" >
   </div>
-  
 
   <div class="form-group">
    
-    <input type="Date" class="form-control" id="date" placeholder="Date" required name="date">
+    <input type="date" class="form-control" id="datepicker" placeholder="Date" required name="date">
   </div>
   <div class="form-group">
    
-    <input type="Date" class="form-control" id="return" placeholder="Return" required name="return">
+    <input type="date" class="form-control" id="return" placeholder="Return" required name="return">
   </div>
   <div class="form-group">
      <select id="inputState" class="form-control" name="passengers">
@@ -78,8 +75,13 @@
   <button type="submit" class="btn btn-success">Search</button>
 </form>
 </div>
-<div class="div2"></div>
 </div>
+
+
+</div>
+<div class="div2"> DIV 2</div>
+</div>
+
 
 <div class="div7">
   <h4>
@@ -100,14 +102,14 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">HOW IT WORKS</h4>
         </div>
-        <div class="modal-body">
+        <div style="color:#000000" class="modal-body">
           STEP 1:
           Choose your transfer for your destination.<br>
           
           <br>
           <br>
           STEP 2:
-          Book online with us and we send you your transfer details.<br>
+          Book online with us and we will send you your booking details.<br>
          
 
           <br>

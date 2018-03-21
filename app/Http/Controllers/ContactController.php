@@ -52,10 +52,13 @@ class ContactController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Contact $id)
+    public function show()
     {
-       $contacts = Contact::all();
-        return view('homepage', compact('contacts')); 
+        $contacts = Contact::all(); //or Text::all(); for all results
+        $contact= Contact::where('name', 'Samuel')->first(); 
+        $contwo= Contact::where('name', 'Charles')->first();
+        $conthree= Contact::where('name', 'Kevin')->first();
+        return view('homepage',compact(['contacts','contact', 'contwo', 'conthree']));
     }
 
     /**

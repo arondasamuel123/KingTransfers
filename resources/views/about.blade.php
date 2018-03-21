@@ -10,46 +10,41 @@
     
   </div>
 
-	<img src="{{ asset('images/abimage.png') }}" alt="product" class="img-fluid" width="150" height="100">
-
-	<img class="right" src="{{ asset('images/drivimage.png') }}" alt="product" class="img-fluid"  width="150" height="152">
-
-	<img class="left" src="{{ asset('images/tranimage.png') }}" alt="product" class="img-fluid"  width="150" height="152">
-
+	
 
 </div>
 <br>
 <br>
 <br>
 <div class="jumbotron text-center">
-<div class="div10"> <a href="#div3">BOOK BELOW</a></div>
   <div class="div4">
   <h1>arrive comfortably.... </h1>
   </div> 
-  <div class="div3">
-  <button type="submit" onclick="myFunction()" class="btn btn-primary" style="margin-left: -772px">One-way</button>
+<button type="submit" onclick="myFunction()" class="btn btn-primary">One-way</button>
 <button type="submit" onclick="myFunction2()"  class="btn btn-danger">Return</button>
 <br>
-   
+    <div class="row">
+    <div class="col-sm-12 form-group">
     <form class="form-inline" action="confirm" method="POST">
   {{ csrf_field() }}
-  <div class="form-group" id="form">
+  <div class="form-group">
      <select required  class="form-control" name="from">
         <option selected>From...</option>
         <option>JKIA</option>
       </select>
 
+  </div>
+  <div class="form-group">
   <input type="search" class="form-control" id="to" placeholder="To:" required name="to" >
   </div>
-  
 
   <div class="form-group">
    
-    <input type="Date" class="form-control" id="date" placeholder="Date" required name="date">
+    <input type="date" class="form-control" id="datepicker" placeholder="Date" required name="date">
   </div>
   <div class="form-group">
    
-    <input type="Date" class="form-control" id="return" placeholder="Return" required name="return">
+    <input type="date" class="form-control" id="return" placeholder="Return" required name="return">
   </div>
   <div class="form-group">
      <select id="inputState" class="form-control" name="passengers">
@@ -76,9 +71,9 @@
   <button type="submit" class="btn btn-success">Search</button>
 </form>
 </div>
-<div class="div2"> DIV 2</div>
+</div>
 
-
+<div class="div2">DIV2</div>
 </div>
 <div class="div7">
   <h4>

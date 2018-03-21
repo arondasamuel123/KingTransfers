@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>KING CABS TRANSFERS</title>
+  <title>KING TRANSFERS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
 
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
   
    <style>
   body {
       font: 400 15px Dosis, sans-serif;
       line-height: 1.8;
       color: #818181;
+      margin: 0 auto;
+      width: 100%;
   }
   h2 {
       font-size: 24px;
@@ -35,12 +40,13 @@
       margin-bottom: 30px;
   }  
   .jumbotron {
-      background-image: url('images/ktjumb.jpg');
-      background-size: 1400px 500px;
+      background-image: url('images/happykt2.jpeg');
       line-height: 1.2em; 
       color: #ffffff;
       padding: 100px 20px;
       font-family: Dosis, sans-serif;
+
+
 
       
   }
@@ -129,8 +135,7 @@
   }
   .navbar {
       margin: 0;
-      background-color: #8e8d8d;  
-;
+      background-color:   #fefefe ;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -138,15 +143,11 @@
       letter-spacing: 4px;
       border-radius: 0;
       font-family: Dosis, sans-serif;
-      
+
 
   }
   .navbar li a, .navbar .navbar-brand {
       color: #050504; !important;
-  }
-  .navbar-brand {
-    background-image: url('images/KING TRANSFER(1).jpg');    
-
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #f4511e !important;
@@ -155,6 +156,7 @@
   .navbar-default .navbar-toggle {
       border-color: transparent;
       color: #fff !important;
+
   }
   footer .glyphicon {
       font-size: 20px;
@@ -203,7 +205,6 @@
     .logo {
         font-size: 150px;
     }
-
     
   }
   .div1{
@@ -221,8 +222,9 @@
     position: relative;
   height: 40px;
   top: 100px;
-  width: 1430px;
+  width: 1390px;
   right: 100px;
+  margin:0 auto;
 
   background-color:#1E1F1E;
   border-color: #696;
@@ -252,25 +254,14 @@
     opacity: 0.9;
 
   }
-  .fa {
-  padding: 20px;
-  font-size: 20px;
+  .fab {
+  padding: 3px;
+  font-size: 15px;
   text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
   border-radius: 50%;
 }
-.fa:hover {
-    opacity: 0.5;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+
+
 
 .modal-content {
     background-color: #fefefe;
@@ -279,10 +270,181 @@
     border: 1px solid #888;
     width: 80%;
 }
-.div9{
-  background-color:
+
+
+@media only screen and (max-width: 480px){
+    .div4 { width: 80%; }
+    .div2  {width:150%;}
 }
 
+@media only screen and (max-width: 667px){
+    .div4 { width: 80%; }
+    .div2  {width:132%;}
+}
+
+@media only screen and (max-width: 738px){
+    .div4 { width: 80%; }
+    .div2  {width:145%;}
+}
+
+@media only screen and (max-width: 568px){
+    .div4 { width: 80%; }
+    .div2  {width:140%;}
+    
+}
+
+@media only screen and (max-width: 1040px){
+    .div4 { width: 80%; }
+    .div2  {width:120%;}
+    
+}
+
+@media only screen and (max-width: 300px){
+    .div4 { width: 80%; }
+      .div2  {width:144%;}
+      
+}
+
+@media only screen and (max-width: 280px){
+    .div4 { width: 60%; }
+      .div2  {width: 100%;}
+      
+}
+@media only screen and (min-width: 320px){
+ img.one {
+   width: 40%;
+ }
+ .div2 {
+   width:139%;
+ }
+ img.two {
+  
+  position: relative;
+  left: 10px;
+ }
+}
+
+@media only screen and (min-width: 360px){
+ img.one {
+   width: 40%;
+ }
+ .div2 {
+   width:135%;
+ }
+ img.two {
+  
+  position: relative;
+  left: 9px;
+ }
+ 
+}
+
+
+@media only screen and (min-width: 375px){
+ img.one {
+   width: 40%;
+ }
+ .div2 {
+   width: 134%;
+ }
+ img.two {
+  
+  position: relative;
+  left: 15px;
+ }
+}
+@media only screen and (min-width: 414px){
+ img.one {
+   width: 40%;
+ }
+ .div2 {
+  width: 130%;
+ }
+
+ img.two {
+  position: relative;
+  left: 30px;
+ }
+
+
+    
+}
+@media only screen and (min-width: 960px){
+ img.one {
+   width: 70%;
+ }
+ .div2 {
+  width: 119%;
+ }
+
+ img.two {
+  position: relative;
+  left: 210px;
+ }
+    
+}
+@media only screen and (min-width: 1024px){
+ img.one {
+   width: 60%;
+ }
+ .div2 {
+  width: 118%;
+ }
+ img.two {
+  position: relative;
+  left: 230px;
+ }
+    
+}
+
+
+@media only screen and (min-width: 1200px) {
+  img.one {
+    width: 80%;
+  }
+  .div2{
+    width: 119%;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1280px) {
+  img.one {
+    width: 80%;
+  }
+  .div2{
+    width: 113%;
+  }
+
+img.two {
+  position: relative;
+  left: 360px;
+ }
+
+}
+
+
+.div11 {
+    margin: auto;
+    background-color: #9DA19E;
+    border-color: #696;
+    opacity: 0.9;
+}
+img.two {
+  position: relative;
+  bottom: 5px;
+  right:-400px;
+}
+#div17 {
+  float: left;
+}
+#div18 {
+  text-align: center;
+  background-color: #cfcfcf;
+
+}
 
   </style>
 </head>
@@ -291,22 +453,32 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      
-      <img src="images/KING TRANSFER(1).jpg" witdth="200%" height="50">
-
-      
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    
+      <a href="/homepage">
+     <img class="one" src="http://127.0.0.1:8000/images/ktnew.png" width="80%">
+     </a>
+     
     </div>
-
-
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a style="color: #000000" href="{{ route ('howitworks') }}">HOW IT WORKS</a></li>
-        <li><a style="color: #000000" href="{{ route ('about') }}">ABOUT US</a></li>
-        <li><a style="color: #000000" href="{{url('/login')}}">LOGIN</a></li>
-        <li><a style="color: #000000" href="/register">REGISTER</a></li>
-        <li><a style="color: #000000" href="/logout">LOGOUT</a></li>
+        
         @if( auth()->check() )
+        <li><a style="color:#000000" href="{{ route ('howitworks') }}">HOW IT WORKS</a></li>
+        <li><a href="{{ route ('about') }}">ABOUT US</a></li>
+        <li><a href="/logout">LOGOUT</a></li>
+
                     <li><h4>Hi {{ auth()->user()->name }}</h4></li>
+        @else
+        <li><a style="color:#000000" href="{{ route ('howitworks') }}">HOW IT WORKS</a></li>
+        <li><a style="color:#000000" href="{{ route ('about') }}">ABOUT US</a></li>
+        <li><a style="color:#000000" href="/freshregister">REGISTER</a></li>
+        <li><a style="color:#000000" href="/freshlogin">LOGIN</a></li>
+        <li><a style="color:#000000" href="/logout">LOGOUT</a></li>     
                 
       @endif
         
@@ -314,18 +486,27 @@
     </div>
   </div>
 </nav>
-<div class="container-fluid text-center">
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
-</div>
+
+
 <hr>
-<div class="container-fluid bg-grey" align="center">
-  <img src="images/paypal-logo.png" width="200" height="10%" style="display:inline-block"> 
-  <img src="images/secure.png" height="9%">
+<footer>
 
+<div id="div18" class="container-fluid" >
+
+<div id="div17" class="container-fluid text-left">
+ <a  href="#" class="fab fa-facebook" style="font-size:45px;"></a>
+  <a href="#" class="fab fa-twitter" style="font-size:45px;"></a>
+  </div>
+   
+     &copy; Copyright 2018 King Transfers
+
+  <img class="two" src="http://127.0.0.1:8000/images/paypal-logo.png" width="200" height="10%" style="display:inline-block"> 
+  <img class="two" src="http://127.0.0.1:8000/images/secure.png" height="9%" style="display:inline-block">
 </div>
 
+</footer>
 
+</body>
 <script>
 function myFunction() {
     document.getElementById("return").disabled = true;
@@ -375,29 +556,7 @@ $(document).ready(function(){
 })
 </script>
 
-<script>
-  $( function() {
-    var todestinations = [
-      "Sankara Hotel",
-      "Nairobi Serena Hotel",
-      "Radisson Blu Hotel",
-      "Eka Hotel",
-      "ABC Place Mall",
-      "Tribe Hotel",
-      "Westlands",
-      "UN Headquarters, Gilgil",
-      "United States Embassy",
-      "Villa Roas Kempenski",
-      "Park Inn",
-      "Westgate Mall",
-      "Strathmore University"
 
-    ];
-    $( "#to" ).autocomplete({
-      source: todestinations
-    });
-  } );
-  </script>
     <script type="text/javascript">
     $( function() {
     $( "#datepicker" ).datepicker({dateFormat: 'yy-mm-dd' });
@@ -414,5 +573,12 @@ $(document).ready(function(){
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+  function activatePlacesSearch() {
+    var input = document.getElementById('to');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  }
+</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcQ_iHX3GGhHNxAAtA-_fa7o1uHpSJkRQ&libraries=places&callback=activatePlacesSearch"></script>
 </body>
 </html>

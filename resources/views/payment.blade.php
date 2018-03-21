@@ -15,11 +15,11 @@
 	</form>
 	<br>
 	<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Pay On Arrival <br> Full amount:$30</button>
-	<br>
-	<br>
-	<div align="right">
-	<a  href="/homepage">HEAD BACK TO THE HOMEPAGE<i class="fa fa-arrow-right"></i></a>
+	
+	
 	</div>
+
+
 <br>
 <br>
 <div class="modal fade" id="myModal" role="dialog">
@@ -31,9 +31,12 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <h4>Thank for choosing King Transfers. <br>
+          <h4>Thank you for choosing King Transfers. <br>
           King Transfers has been notified that you are paying on arrival</h4>
         </div>
+
+              <img src="images/ktnew.png" width="60%">
+
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         </div>
@@ -42,4 +45,10 @@
     </div>
   </div>
 
+
+
 </div>
+
+<div align="right">
+	<a  href="/homepage">HEAD BACK TO THE HOMEPAGE<i class="fa fa-arrow-right"></i></a>
+	</div>

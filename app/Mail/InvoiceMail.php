@@ -10,6 +10,8 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\User;
+use App\Transfer;
+use Auth;
 
 
 class InvoiceMail extends Mailable
@@ -37,7 +39,10 @@ class InvoiceMail extends Mailable
      */
     public function build()
     {
-       $user = User::with('transfers.flights')->latest()->first();
+
+        $user=Auth::user();
+        $user->transfers;
+       //$user = User::with('transfers.flights')->latest()->first();
         \Log::info($user);
         return $this->view('invoice',compact('user'));
         

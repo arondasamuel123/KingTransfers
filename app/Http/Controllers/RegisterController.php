@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Transfer;
 
 class RegisterController extends Controller
 {
@@ -43,9 +44,11 @@ class RegisterController extends Controller
         
         $user = User::create(request(['name', 'email', 'password']));
         
+        $transfer = Transfer::latest()->first();
+        $user->transfers()->attach($transfer);
+
         auth()->login($user);
-        
-        return redirect()->to('/homepage');
+        return redirect()->to('/flight');
     }
 
     /**
@@ -54,9 +57,9 @@ class RegisterController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function freshregister()
     {
-        //
+        return view('freshregister');
     }
 
     /**
@@ -65,9 +68,22 @@ class RegisterController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function storeregister(Request $request)
     {
-        //
+        $this->validate(request(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+        
+        $user = User::create(request(['name', 'email', 'password']));
+        
+        $transfer = Transfer::latest()->first();
+        $user->transfers()->attach($transfer);
+
+        auth()->login($user);
+        return redirect()->to('/homepage');
+        
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Notifications\ResetPasswordNotification;
 
 
 class User extends Authenticatable
@@ -29,6 +30,8 @@ class User extends Authenticatable
     ];
 
 
+    
+
 public function setPasswordAttribute($password)
     {
         $this->attributes['password'] = bcrypt($password);
@@ -37,9 +40,15 @@ public function setPasswordAttribute($password)
      
 
     public function transfers(){
-        return $this->hasMany(Transfer::class)->latest()->limit(1);
+        return $this->belongsToMany(Transfer::class)->latest()->limit(1);
+        
+      
     }
 
+ public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ResetPasswordNotification($token));
+    }
    
 
 

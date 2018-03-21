@@ -1,18 +1,20 @@
 @extends('layout.masters')
 
-
+<div class="container-fluid">
 <div class="jumbotron text-center">
 <br>
-<div class="div1"> DIV 1</div>
+
 <div class="div4" id="rel4">
-  <h1 style="text-align: center;">KING TRANSFERS </h1> 
-  <p>We specialize in Airport Transfers</p>
+  <h1>KING TRANSFERS </h1> 
+  <p>arrive comfortably...</p>
 </div>
-  <div class="div3">
-  <button type="submit" onclick="myFunction()" class="btn btn-primary" style="margin-left: -772px">One-way</button>
+ <br>
+ <br>
+<button type="submit" onclick="myFunction()" class="btn btn-primary">One-way</button>
 <button type="submit" onclick="myFunction2()"  class="btn btn-danger">Return</button>
 <br>
-   
+    <div class="form-group row">
+    <div class="col-sm-12 form-group">
     <form class="form-inline" action="confirm" method="POST">
   {{ csrf_field() }}
   <div class="form-group">
@@ -21,9 +23,10 @@
         <option>JKIA</option>
       </select>
 
-  <input type="search" class="form-control" id="to" placeholder="To:" required name="to" >
   </div>
-  
+  <div class="form-group">
+  <input type="search" class="form-control" id="to" placeholder="To:" required name="to" size="30">
+  </div>
 
   <div class="form-group">
    
@@ -58,8 +61,10 @@
   <button type="submit" class="btn btn-success">Search</button>
 </form>
 </div>
+</div>
 
 <div class="div2"> DIV 2</div>
+</div>
 </div>
 
 
@@ -75,32 +80,31 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-      @foreach($contacts as $contact)
+      
       <p style="color:#000000">{{$contact->name}}</p>
       <p style="color:#000000">{{$contact->comments}}</p>
-      @endforeach
      
       <br>
 
       </div>
       <div class="item">
-         @foreach($contacts as $contact)
-      <p style="color:#000000">{{$contact->name}}</p>
-      <p style="color:#000000">{{$contact->comments}}</p>
-      @endforeach
+         
+      <p style="color:#000000">{{$contwo->name}}</p>
+      <p style="color:#000000">{{$contwo->comments}}</p>
+      
        
        
       </div>
       <div class="item">
-         @foreach($contacts as $contact)
-      <p style="color:#000000">{{$contact->name}}</p>
-      <p style="color:#000000">{{$contact->comments}}</p>
-      @endforeach
+         
+      <p style="color:#000000">{{$conthree->name}}</p>
+      <p style="color:#000000">{{$conthree->comments}}</p>
+     
       
       </div>
     </div>
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid">
   <h2 class="text-center">COMMENTS</h2>
   <div class="row">
     <div class="col-sm-5">
@@ -111,10 +115,10 @@
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
-        <div class="col-sm-6 form-group">
+        <div  class="col-sm-6 form-group">
           <form action="sent" method="POST">
            {{ csrf_field() }}
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input  class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
@@ -134,4 +138,5 @@
         @endif
       </div>
     </div>
+  </div>
   </div>
